@@ -1756,7 +1756,7 @@ VmSockPosixReArmTimer(
     )
 {
     uint32_t                         dwError = REST_ENGINE_SUCCESS;
-    struct                           itimerspec ts = {0};
+    struct                           itimerspec ts = {{0}, {0}};
     int                              timerFd = -1;
     int                              nSec = 0;
     int                              nNanoSec = 0;

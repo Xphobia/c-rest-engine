@@ -11,6 +11,10 @@ AM_PROG_AR
 AC_PROG_CC
 AC_PROG_LIBTOOL
 
+# for automake < 1.14
+# see issue: https://github.com/scanmem/scanmem/issues/289
+AM_PROG_CC_C_O
+
 dnl Check supported operating systems
 dnl
 
